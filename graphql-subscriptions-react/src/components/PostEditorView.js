@@ -5,8 +5,8 @@ import './PostEditorView.css';
 
 const createPost = gql`
   mutation CreatePostMutation($title: String!, $body: String!) {
-    createPostAsync(title: $title, body: $body) {
-      process_id
+    createPost(title: $title, body: $body) {
+      id
     }
   }
 `;

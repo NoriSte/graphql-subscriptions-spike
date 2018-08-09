@@ -6,8 +6,8 @@ import PropTypes from "prop-types";
 
 const createComment = gql`
   mutation CreateCommentMutation($postId: ID!, $body: String!) {
-    createCommentAsync(postId: $postId, body: $body) {
-      process_id
+    createComment(postId: $postId, body: $body) {
+      id
     }
   }
 `;
